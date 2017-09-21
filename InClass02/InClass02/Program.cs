@@ -10,6 +10,7 @@ namespace InClass02
     {
         static void Main(string[] args)
         {
+            // Good job...here's a code example
             //Console.WriteLine("hello Will");
             //Console.WriteLine("hello Esther");
             //Console.WriteLine("hello Mike");
