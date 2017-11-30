@@ -10,6 +10,10 @@ namespace InClass09
     {
         static void Main(string[] args)
         {
+            string name = "Al Dente";
+            string greeting = "Hello from";
+            Console.WriteLine($"\(name) \(greeting");
+
             /*
             Calling static methods from within Program.cs
             int sum = AddNumbers(5, 6, 7);
