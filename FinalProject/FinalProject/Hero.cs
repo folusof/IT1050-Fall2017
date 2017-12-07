@@ -78,11 +78,11 @@ namespace FinalProject
        
         public int ChargePower()
         {
-            // TODO: Problem 5 - increase this.Power by 1
+            // TODO: Problem 5 - increase this.PowerLevel by 1
             return PowerLevel;
         }
 
-        // TODO: Problem 6 - Add an overloaded method ChargePower that has a parameter for increaseAmount.  Add increaseAmount to this.Power and return the new value for this.Power (try to use a loop calling the other ChargePower)
+        // TODO: Problem 6 - Add an overloaded method ChargePower that has a parameter for increaseAmount.  Add increaseAmount to this.PowerLevel and return the new value for this.PowerLevel (try to use a loop calling the other ChargePower)
 
     }
 }
