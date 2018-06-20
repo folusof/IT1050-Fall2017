@@ -1,0 +1,22 @@
+string[] items = new string[3];
+decimal[] costs = new decimal[3];
+for (int i = 0; i < 3; i++)
+{
+    Console.Write("Enter an item description for item " + (i+1) + ": ");
+    items[i] = Console.ReadLine();
+    Console.Write("Enter an cost for item " + (i + 1) + ": ");
+    costs[i] = Convert.ToDecimal(Console.ReadLine());
+}
+
+decimal sum = 0m;
+Console.WriteLine("Item         \tCost\n-----------------");
+for (int i = 0; i < items.Length; i++)
+{
+    sum = sum + costs[i];
+    Console.WriteLine(items[i] + "    \t" + costs[i].ToString("C2"));
+}
+Console.WriteLine("\nSubtotal\t" + sum.ToString("C2"));
+decimal taxAmount = sum * 0.07m;
+decimal total = sum + taxAmount;
+Console.WriteLine("Tax     \t" + taxAmount.ToString("C2"));
+Console.WriteLine("Total   \t" + total.ToString("C2"));
