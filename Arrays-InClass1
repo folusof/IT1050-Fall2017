@@ -1,0 +1,34 @@
+// string[] mainCourse = new string[3000];
+string[] mainCourse = { "Meatloaf", "Pizza", "Bibimbap", "Butter Chicken" };
+string[] sideDish = { "Mashed Potatoes", "Garlic Bread", "Kimchi", "Naan" };
+
+sideDish[0] = "Mixed Vegetables";
+
+
+Console.WriteLine("Today's Main Dishes\n----------------------------");
+foreach (string dish in mainCourse)
+{
+    Console.WriteLine(dish);
+}
+Console.WriteLine();
+
+Console.WriteLine("Select an option from the menu\n----------------------------");
+for (int i = 0; i < mainCourse.Length; i++)
+{
+    Console.WriteLine(i + ": " + mainCourse[i] + " with " + sideDish[i]);
+}
+Console.WriteLine();
+
+int selection = Convert.ToInt32(Console.ReadLine());
+if (selection >= 0 && selection < mainCourse.Length)
+{
+    Console.WriteLine("Thank you! You have selected " + mainCourse[selection] + " with " + sideDish[selection]);
+}
+else
+{
+    Console.WriteLine("Invalid selection");
+}
+
+
+string[] items = { "Tent", "Light", "Food" };
+decimal[] costs = { 40m, 10m, 30m };
