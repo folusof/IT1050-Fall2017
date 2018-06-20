@@ -1,0 +1,35 @@
+            List<string> items = new List<string>();
+
+            items.Add("popcorn");
+            items.Add("soda");
+            items.Add("candy");
+            items.Insert(1, "coffee");
+
+            for (int i = 0; i < items.Count; i++)
+            {
+                Console.WriteLine(i + ": " + items[i]);
+            }
+
+            items.Insert(2, "ice cream");
+            Console.WriteLine("\n");
+
+            for (int i = 0; i < items.Count; i++)
+            {
+                Console.WriteLine(i + ": " + items[i]);
+            }
+
+            items.Insert(1, "chips");
+            Console.WriteLine("\n");
+
+            for (int i = 0; i < items.Count; i++)
+            {
+                Console.WriteLine(i + ": " + items[i]);
+            }
+            // Console.WriteLine(items.Count);
+
+            Console.WriteLine("Sorted Elements:");
+            items.Sort();
+            for (int i = 0; i < items.Count; i++)
+            {
+                Console.WriteLine(i + ": " + items[i]);
+            }
