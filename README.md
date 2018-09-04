@@ -1,2 +1,2 @@
-# IT1050-Fall2017-Thursday
-Fall 2017 In Class Demonstrations
+# IT1050-Fall2018-Wednesday
+Fall 2018 In Class Demonstrations
